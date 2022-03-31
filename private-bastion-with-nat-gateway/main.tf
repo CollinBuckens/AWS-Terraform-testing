@@ -9,5 +9,5 @@ provider "aws" {
 }
 
 module "shared_vars" {
-  source = "./modules/shared_vars_module"
+  source = "./modules/shared-vars"
 }

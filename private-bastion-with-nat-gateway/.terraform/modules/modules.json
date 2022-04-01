@@ -1,1 +1,1 @@
-{"Modules":[{"Key":"","Source":"","Dir":"."},{"Key":"shared_vars","Source":"./modules/shared-vars","Dir":"modules/shared-vars"}]}
+{"Modules":[{"Key":"bastion_module","Source":"./modules/bastion-module","Dir":"modules/bastion-module"},{"Key":"","Source":"","Dir":"."},{"Key":"shared_vars","Source":"./modules/shared-vars","Dir":"modules/shared-vars"},{"Key":"VPC_module","Source":"./modules/VPC_module","Dir":""}]}

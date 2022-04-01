@@ -23,7 +23,7 @@ module "VPC_module" {
 module "bastion_module" {
   source                    = "./modules/bastion-module"
   env_suffix                = module.shared_vars.env_suffix
-  subnet_id                 = module.VPC_module.aws_vpc_public_subnet[0]
+  subnet_id                 = module.VPC_module.aws_vpc_private_subnet[0]
   vpc_security_group_ids    = module.security_groups_module.security_group_bastion_id
   iam_instance_profile_name = module.iam_module.profile_name
   depends_on = [

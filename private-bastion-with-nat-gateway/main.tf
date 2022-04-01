@@ -53,3 +53,13 @@ module "iam_module" {
     module.shared_vars
   ]
 }
+
+module "nat_gateway_module" {
+  source = "./modules/nat-gateway-module"
+  env_suffix        = module.shared_vars.env_suffix
+  subnet_id         = module.VPC_module.aws_vpc_private_subnet[0]
+   depends_on = [
+    module.VPC_module,
+    module.shared_vars
+  ]
+}

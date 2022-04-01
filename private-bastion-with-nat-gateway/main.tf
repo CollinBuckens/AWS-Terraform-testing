@@ -13,7 +13,7 @@ module "shared_vars" {
 }
 
 module "VPC_module" {
-  source     = "./modules/VPC_module"
+  source     = "./modules/VPC-module"
   env_suffix = module.shared_vars.env_suffix
   depends_on = [
     module.shared_vars,

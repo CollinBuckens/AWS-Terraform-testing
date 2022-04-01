@@ -9,7 +9,7 @@ output "aws_vpc_cidr" {
   value       = module.aws_vpc.vpc_cidr_block
 }
 
-output "aws_vpc_ipv6" {
+output "aws_vpc_cidr_ipv6" {
   description = "The ipv6 cidr block of the gateway VPC"
   value       = module.aws_vpc.vpc_ipv6_cidr_block
 }

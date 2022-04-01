@@ -2,7 +2,7 @@ module "aws_vpc" {
   source                                         = "terraform-aws-modules/vpc/aws"
   create_vpc                                     = true
   cidr                                           = "10.0.0.0/16"
-  azs                                            = ["eu-west-1a", "eu-west-1b"]
+  azs                                            = ["eu-west-3a", "eu-west-3b"]
   public_subnets                                 = ["10.0.1.0/24"]
   private_subnets                                = ["10.1.0.0/24"]
   enable_ipv6                                    = true

@@ -4,7 +4,7 @@ variable "env_suffix" {
 variable "subnet_id" {
   description = "The id of the subnet"
 }
-variable "VPC_security_group_ids" {
+variable "vpc_security_group_ids" {
   description = "The id of the security group of the VPC"
 }
 variable "iam_instance_profile_name" {

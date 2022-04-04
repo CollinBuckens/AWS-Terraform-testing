@@ -55,11 +55,13 @@ module "iam_module" {
 }
 
 module "nat_gateway_module" {
-  source = "./modules/nat-gateway-module"
-  env_suffix        = module.shared_vars.env_suffix
-  subnet_id         = module.VPC_module.aws_vpc_public_subnet[0]
-   depends_on = [
+  source     = "./modules/nat-gateway-module"
+  env_suffix = module.shared_vars.env_suffix
+  subnet_id  = module.VPC_module.aws_vpc_public_subnet[0]
+  bastion_id = module.bastion_module.bastion_id
+  depends_on = [
     module.VPC_module,
-    module.shared_vars
+    module.shared_vars,
+    module.bastion_module
   ]
 }

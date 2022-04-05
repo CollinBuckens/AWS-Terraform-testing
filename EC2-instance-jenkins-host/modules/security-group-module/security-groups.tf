@@ -2,7 +2,7 @@ resource "aws_security_group" "Security_Group_jenkins" {
   name   = "security-group-jenkins"
   vpc_id = var.vpc_id
   tags = {
-    Name        = "security_group_jenkins_${var.env_suffix}"
+    Name = "security_group_jenkins_${var.env_suffix}"
   }
 }
 resource "aws_security_group_rule" "allow_jenkins_traffic" {

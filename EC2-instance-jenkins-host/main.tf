@@ -35,8 +35,8 @@ module "ec2_module" {
 }
 
 module "security_groups_module" {
-  source            = "./modules/security-group-module"
-  env_suffix        = module.shared_vars.env_suffix
+  source        = "./modules/security-group-module"
+  env_suffix    = module.shared_vars.env_suffix
   vpc_id        = module.VPC_module.vpc_id
   vpc_cidr      = module.VPC_module.vpc_cidr
   vpc_cidr_ipv6 = module.VPC_module.vpc_cidr_ipv6

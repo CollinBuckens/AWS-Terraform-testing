@@ -1,3 +1,4 @@
+# adds ssm to the role.
 resource "aws_iam_policy_attachment" "ssm_managed_instance_core" {
   name       = "ssm-managed-policy"
   roles      = [resource.aws_iam_role.jenkins_host_role.id]

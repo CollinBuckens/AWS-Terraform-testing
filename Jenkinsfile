@@ -21,5 +21,5 @@ pipeline{
             archiveArtifacts "pegus-artifact-storage/artifacts/*"
             }
         }
-    }
 }
+

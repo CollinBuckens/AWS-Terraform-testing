@@ -19,7 +19,7 @@ pipeline{
         }
         stage('Archive') {
             steps{
-                 archiveArtifacts "main.tf"
+                 archiveArtifacts "private-bastion-with-nat-gateway/*"
             }
     }
 }

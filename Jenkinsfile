@@ -17,6 +17,9 @@ pipeline{
                 echo 'Deploying..'
             }
         }
+        stage('Archive') {
+        archiveArtifacts "main.tf"
+    }
 }
 }
 

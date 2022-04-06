@@ -1,3 +1,4 @@
+# This configures the jenkins host role.
 resource "aws_iam_role" "jenkins_host_role" {
   name = "jenkins_host_role"
 

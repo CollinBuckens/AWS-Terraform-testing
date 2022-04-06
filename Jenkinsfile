@@ -18,7 +18,9 @@ pipeline{
             }
         }
         stage('Archive') {
-        archiveArtifacts "main.tf"
+            steps{
+                 archiveArtifacts "main.tf"
+            }
     }
 }
 }

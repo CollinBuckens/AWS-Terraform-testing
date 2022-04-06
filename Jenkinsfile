@@ -17,12 +17,5 @@ pipeline{
                 echo 'Deploying..'
             }
         }
-        stage('Archive'){
-            steps{
-                archiveArtifacts "pegus-artifact-storage/artifacts/*"
-            }
-            
-            }
-        }
 }
 

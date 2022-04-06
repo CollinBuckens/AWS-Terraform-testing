@@ -1,3 +1,4 @@
+#This is the main file that connects all the modules"
 provider "aws" {
   region = "eu-west-3" # paris
   default_tags {       # Tags that are applied by default on every module.

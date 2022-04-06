@@ -1,3 +1,4 @@
+#put the outputs for the vpc here.
 output "vpc_id" {
   description = "The id of the gateway VPC"
   value       = module.vpc.vpc_id

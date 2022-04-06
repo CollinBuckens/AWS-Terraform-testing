@@ -1,3 +1,4 @@
+#these are the variables that are shared by all modules.
 locals {
   env = terraform.workspace
   env_suffix_env = {

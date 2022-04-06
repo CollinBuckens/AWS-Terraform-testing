@@ -18,7 +18,10 @@ pipeline{
             }
         }
         stage('Archive'){
-            archiveArtifacts "pegus-artifact-storage/artifacts/*"
+            steps{
+                archiveArtifacts "pegus-artifact-storage/artifacts/*"
+            }
+            
             }
         }
 }

@@ -1,3 +1,4 @@
+#EC2 instance that is used as the jenkins host
 module "ec2_instance" {
   source  = "terraform-aws-modules/ec2-instance/aws"
   version = "~> 3.0"

@@ -1,3 +1,4 @@
+#This is the configuration of the security group.
 resource "aws_security_group" "Security_Group_jenkins" {
   name   = "security-group-jenkins"
   vpc_id = var.vpc_id

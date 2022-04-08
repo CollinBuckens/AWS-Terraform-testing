@@ -19,7 +19,7 @@ pipeline{
         }
         stage('Archive') {
             steps{
-                 archiveArtifacts "*/*.txt"
+                 archiveArtifacts "*/*.txt", fingerprint: true
             }
     }
 }

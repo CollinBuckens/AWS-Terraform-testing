@@ -7,6 +7,11 @@ pipeline{
                 archiveArtifacts "*/*.txt"
             }
         }
+        stage('Stash'){
+            steps{
+                stash name: 'stuff', includes: '*'
+            }
+        }
     }
 }
 

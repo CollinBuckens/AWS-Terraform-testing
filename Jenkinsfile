@@ -9,7 +9,9 @@ pipeline{
         }
 
         stage ('Unarchive'){
-            unarchive mapping: ["*/*.txt":'.']
+            steps{
+                unarchive mapping: ["*/*.txt":'.']
+            }
         }
 
         stage('Stash'){
@@ -19,7 +21,10 @@ pipeline{
         }
 
         stage('Unstash'){
-            unstash 'stuff'
+            steps{
+                unstash 'stuff'
+            }
+            
         }
     }
 }

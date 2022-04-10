@@ -4,9 +4,9 @@ pipeline{
     stages {
         stage('Archive') {
             steps{
-                archiveArtifacts: "*/*.txt", fingerprint: true
+                archiveArtifacts: "*/*.txt"
             }
+        }
     }
-}
 }
 

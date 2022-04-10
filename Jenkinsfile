@@ -4,7 +4,7 @@ pipeline{
     stages {
         stage('Archive') {
             steps{
-                archiveArtifacts: "*/*.txt"
+                archiveArtifacts "*/*.txt"
             }
         }
     }

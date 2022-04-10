@@ -7,10 +7,19 @@ pipeline{
                 archiveArtifacts "*/*.txt"
             }
         }
+
+        stage ('Unarchive'){
+            unarchive mapping: ["*/*.txt":'.']
+        }
+
         stage('Stash'){
             steps{
                 stash name: 'stuff', includes: '*'
             }
+        }
+
+        stage('Unstash'){
+            unstash 'stuff'
         }
     }
 }

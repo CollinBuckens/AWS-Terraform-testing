@@ -62,6 +62,8 @@
 - It fucking works!!
 - Why does stashing not work?
 - maybe the logger will tell us
+- lets run some tests
+
 
 
 

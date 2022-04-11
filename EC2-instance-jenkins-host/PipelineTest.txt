@@ -59,6 +59,7 @@
 - This is test #15
 - This is test #16
 - This is the first test with jenkins running with deleteArtifacts and deleteStashes enabled in the gui.
+- It fucking works!!
 
 
 

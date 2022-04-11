@@ -20,12 +20,12 @@ pipeline{
             }
         }
 
-        // stage('Unstash'){
-        //     steps{
-        //         unstash 'stuff'
-        //     }
+        stage('Unstash'){
+            steps{
+                unstash 'stuff'
+            }
             
-        // }
+        }
     }
 }
 

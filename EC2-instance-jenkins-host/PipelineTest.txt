@@ -61,6 +61,8 @@
 - This is the first test with jenkins running with deleteArtifacts and deleteStashes enabled in the gui.
 - It fucking works!!
 - Why does stashing not work?
+- maybe the logger will tell us
+
 
 
 

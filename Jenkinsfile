@@ -7,10 +7,33 @@ pipeline{
                 archiveArtifacts "*/*.txt"
             }
         }
-        
+
+        stage('UnArchive'){
+            steps{
+                unarchive mapping: ['artifacts/' : '.']
+            }
+        }
+
         stage('Stash'){
             steps{
-                stash name: 'stuff', includes: 'EC2-instance-jenkins-host/*'
+                try{
+                    stash name: 'stuff', includes: 'EC2-instance-jenkins-host/*'
+                }
+                catch (error){
+                    echo "error stashing: ${error}"
+                }
+                
+            }
+        }
+
+        stage('UnStash'){
+            steps{
+                try{
+                    unstash name: "stuff"
+                }
+                catch (error){
+                    echo "error unstashing ${error}"
+                }
             }
         }
     }

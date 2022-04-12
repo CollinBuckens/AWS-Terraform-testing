@@ -16,7 +16,7 @@ pipeline{
 
         stage('Stash'){
             steps{
-                stash name: 'stuff', includes: '/private-bastion-with-nat-gateway/*'
+                stash name: 'stuff', includes: '*/private-bastion-with-nat-gateway/*'
             }
         }
     }

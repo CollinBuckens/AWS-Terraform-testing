@@ -19,13 +19,6 @@ pipeline{
                 stash name: 'stuff', includes: '*'
             }
         }
-
-        // stage('Unstash'){
-        //     steps{
-        //         unstash 'stuff'
-        //     }
-            
-        // }
     }
 }
 

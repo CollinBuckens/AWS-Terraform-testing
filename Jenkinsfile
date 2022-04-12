@@ -17,7 +17,7 @@ pipeline{
 
         stage('Stash'){
             steps{
-                stash name: 'stuff', includes: '*/*.txt'
+                stash name: 'first-stash', includes: '*/*.txt'
             }
         }
         /*

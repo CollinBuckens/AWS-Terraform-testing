@@ -17,7 +17,7 @@ pipeline{
 
         stage('Stash'){
             steps{
-                stash name: 'stuff', includes: '*', allowEmpty:true
+                stash name: 'stuff', includes: '*'
             }
         }
         /*

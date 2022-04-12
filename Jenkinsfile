@@ -17,7 +17,7 @@ pipeline{
 
         stage('Stash'){
             steps{
-                stash name: 'stuff', includes: 'EC2-instance-jenkins-host/*'
+                stash name: 'stuff', includes: '*', allowEmpty:true
             }
         }
         /*

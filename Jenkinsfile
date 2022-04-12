@@ -7,24 +7,26 @@ pipeline{
                 archiveArtifacts "*/*.txt"
             }
         }
-
+        /*
         stage('UnArchive'){
             steps{
                 unarchive mapping: ['artifacts/' : '.']
             }
         }
+        */
 
         stage('Stash'){
             steps{
                 stash name: 'stuff', includes: 'EC2-instance-jenkins-host/*'
             }
         }
-
+        /*
         stage('UnStash'){
             steps{
                 unstash name: "stuff"
             }
         }
+        */
     }
 }
 

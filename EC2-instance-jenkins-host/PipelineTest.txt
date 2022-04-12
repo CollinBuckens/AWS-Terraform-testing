@@ -66,6 +66,8 @@
 - it is deleting the stashes even when unstasch is disabled
 - first test of 12/04
 - I broke it
+- This will be build 25 and a test if the delete works
+
 
 
 

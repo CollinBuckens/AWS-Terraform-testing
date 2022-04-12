@@ -20,13 +20,12 @@ pipeline{
                 stash name: 'first-stash', includes: '*/*.txt'
             }
         }
-        /*
+        
         stage('UnStash'){
             steps{
                 unstash name: "stuff"
             }
         }
-        */
     }
 }
 

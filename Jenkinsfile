@@ -10,7 +10,7 @@ pipeline{
         
         stage('UnArchive'){
             steps{
-                unarchive mapping: ['artifacts/' : '.']
+                unarchive mapping: ['*/*.txt' : '.']
             }
         }
 

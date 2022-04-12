@@ -15,21 +15,15 @@ pipeline{
         }
 
         stage('Stash'){
-                try{
-                    stash name: 'stuff', includes: 'EC2-instance-jenkins-host/*'
-                }
-                catch (error){
-                    echo "error stashing: ${error}"
-                }
+            steps{
+                stash name: 'stuff', includes: 'EC2-instance-jenkins-host/*'
+            }
         }
 
         stage('UnStash'){
-                try{
-                    unstash name: "stuff"
-                }
-                catch (error){
-                    echo "error unstashing ${error}"
-                }
+            steps{
+                unstash name: "stuff"
+            }
         }
     }
 }

@@ -7,13 +7,12 @@ pipeline{
                 archiveArtifacts "*/*.txt"
             }
         }
-        /*
+        
         stage('UnArchive'){
             steps{
                 unarchive mapping: ['artifacts/' : '.']
             }
         }
-        */
 
         stage('Stash'){
             steps{

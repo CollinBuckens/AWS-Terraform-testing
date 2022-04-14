@@ -1,6 +1,7 @@
 # main file that talks to all the modules and creates the infrastructure.
 provider "aws" {
   region = "eu-west-1" # Ireland
+  profile = "sanbox"
   default_tags {       # Tags that are applied by default on every module.
     tags = {
       Terraform   = true
